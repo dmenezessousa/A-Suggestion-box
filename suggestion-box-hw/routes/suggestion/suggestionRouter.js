@@ -29,7 +29,7 @@ router.get("/get-suggestion-by-id/:id",(req,res)=>{
 });
 
 //POST request 
-router.post("/create-suggestion",(err,res)=>{
+router.post("/create-suggestion",(req,res)=>{
     suggestionController.createSuggestion(req.body,(err,savedSuggestion)=>{
         if(err){
             res

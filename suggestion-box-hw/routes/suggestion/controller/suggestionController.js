@@ -31,9 +31,6 @@ module.exports = {
             tittle: body.tittle,
             author: body.author,
             suggestion: body.suggestion,
-            likes: body.likes,
-            anonymous: body.anonymous,
-            timeCreated:  body.timeCreated
         });
 
         createdSuggestion.save((err,savedSuggestion)=>{

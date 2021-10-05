@@ -13,9 +13,7 @@ const suggestionSchema = new mongoose.Schema({
     likes:{
         type: Number, default: 0,
     },
-    anonymous:{
-        type: Boolean,
-    },
+    anonymous: Boolean,
     timeCreated: {
         type: Date,
         default: Date.now,
